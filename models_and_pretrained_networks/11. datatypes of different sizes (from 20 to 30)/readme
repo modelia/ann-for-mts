@@ -1,0 +1,41 @@
+1st training
+----------------------
+num training models: 800
+Training time: 7:57:24.575542 seconds
+Saving model
+Evaluating model
+  eval: loss 202.77
+  eval: accuracy of tokens 0.90
+  eval: accuracy of programs 0.00
+(33648, 37374, 0, 80)
+Total Evaluation time: 0:00:31.569433 seconds
+
+
+2nd training
+----------------------
+num training models: 2000
+
+Training time: 18:04:31.221467 seconds
+Saving model
+Evaluating model
+  eval: loss 154.42
+  eval: accuracy of tokens 0.91
+  eval: accuracy of programs 0.00
+(83672, 91806, 0, 200)
+Total Evaluation time: 0:01:05.553822 seconds
+
+
+3rd training
+----------------------
+Training time: 18:56:01.537392 seconds
+Saving model
+Evaluating model
+  eval: loss 170.29
+  eval: accuracy of tokens 0.91
+  eval: accuracy of programs 0.00
+(83872, 91806, 0, 200)
+Total Evaluation time: 0:01:02.738401 seconds
+
+
+
+

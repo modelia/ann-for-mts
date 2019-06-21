@@ -1,0 +1,10 @@
+  eval: loss 17.92
+  eval: accuracy of tokens 0.77
+  eval: accuracy of programs 0.30
+(14828, 19308, 30, 100)
+Training time: 13:35:20.515316 seconds
+
+
+#training dataset: 800
+valid: 100
+test: 100

@@ -1,0 +1,19 @@
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'A', 'DataType', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'DataType', '<ATTR>', 'name', 'y', '<OBJ>', 'C', 'DataType', '<ATTR>', 'name', 'z']
+['<MODEL>', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Type', '<ATTR>', 'name', 'y', '<OBJ>', 'C', 'Type', '<ATTR>', 'name', 'z']
+['<MODEL>', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Type', '<ATTR>', 'name', 'y', '<OBJ>', 'C', 'Type', '<ATTR>', 'name', 'z']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'A', 'DataType', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'DataType', '<ATTR>', 'name', 'y', '<OBJ>', 'C', 'DataType', '<ATTR>', 'name', 'z', '<OBJ>', 'D', 'DataType', '<ATTR>', 'name', 'o']
+['<MODEL>', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Type', '<ATTR>', 'name', 'y', '<OBJ>', 'C', 'Type', '<ATTR>', 'name', 'z', '<OBJ>', 'D', 'Type', '<ATTR>', 'name', 'o']
+['<MODEL>', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Type', '<ATTR>', 'name', 'y', '<OBJ>', 'C', 'Type', '<ATTR>', 'name', 'z', '<OBJ>', 'D', 'Type', '<ATTR>', 'name', 'o']
+---
+  eval: loss 0.00
+  eval: accuracy of tokens 1.00
+  eval: accuracy of programs 1.00
+(10398, 10398, 100, 100)
+Training time: 4:15:18.565794 seconds
+
+#training dataset: 800
+valid: 100
+test: 100

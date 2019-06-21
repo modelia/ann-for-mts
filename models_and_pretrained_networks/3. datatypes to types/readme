@@ -1,0 +1,21 @@
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'tInt', 'DataType', '<ATTR>', 'name', 'Integer', '<OBJ>', 'A', 'Klazz', '<ATTR>', 'name', 'x']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'tInt', 'DataType', '<ATTR>', 'name', 'Integer', '<OBJ>', 'A', 'Klazz', '<ATTR>', 'name', 'x']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+---
+  eval: loss 0.00
+  eval: accuracy of tokens 1.00
+  eval: accuracy of programs 1.00
+(7500, 7500, 100, 100)
+Training time: 1:53:19.627752 seconds
+
+#training models: 800
+#valid: 100
+#rest: 100
+

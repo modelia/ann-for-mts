@@ -1,0 +1,45 @@
+  eval: loss 0.00
+  eval: accuracy of tokens 1.00
+  eval: accuracy of programs 1.00
+(6420, 6420, 100, 100)
+Training time: 4:29:13.690897 seconds
+
+# Training models: 800
+# Validation models: 100
+# Test models: 100
+
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'E', 'DataType', '<ATTR>', 'name', 'w', '<OBJ>', 'A', 'Klazz', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Klazz', '<ATTR>', 'name', 'y']
+['<MODEL>', '<OBJ>', 'E', 'Type', '<ATTR>', 'name', 'w', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Type', '<ATTR>', 'name', 'y']
+['<MODEL>', '<OBJ>', 'E', 'Type', '<ATTR>', 'name', 'w', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Type', '<ATTR>', 'name', 'y']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'E', 'DataType', '<ATTR>', 'name', 'w']
+['<MODEL>', '<OBJ>', 'E', 'Type', '<ATTR>', 'name', 'w']
+['<MODEL>', '<OBJ>', 'E', 'Type', '<ATTR>', 'name', 'w']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'E', 'DataType', '<ATTR>', 'name', 'w', '<OBJ>', 'A', 'Klazz', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Klazz', '<ATTR>', 'name', 'y', '<OBJ>', 'C', 'Klazz', '<ATTR>', 'name', 'z', '<OBJ>', 'D', 'Klazz', '<ATTR>', 'name', 't']
+['<MODEL>', '<OBJ>', 'E', 'Type', '<ATTR>', 'name', 'w', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Type', '<ATTR>', 'name', 'y', '<OBJ>', 'C', 'Type', '<ATTR>', 'name', 'z', '<OBJ>', 'D', 'Type', '<ATTR>', 'name', 't']
+['<MODEL>', '<OBJ>', 'E', 'Type', '<ATTR>', 'name', 'w', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Type', '<ATTR>', 'name', 'y', '<OBJ>', 'C', 'Type', '<ATTR>', 'name', 'z', '<OBJ>', 'D', 'Type', '<ATTR>', 'name', 't']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'E', 'DataType', '<ATTR>', 'name', 'w']
+['<MODEL>', '<OBJ>', 'E', 'Type', '<ATTR>', 'name', 'w']
+['<MODEL>', '<OBJ>', 'E', 'Type', '<ATTR>', 'name', 'w']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'E', 'DataType', '<ATTR>', 'name', 'w']
+['<MODEL>', '<OBJ>', 'E', 'Type', '<ATTR>', 'name', 'w']
+['<MODEL>', '<OBJ>', 'E', 'Type', '<ATTR>', 'name', 'w']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'E', 'DataType', '<ATTR>', 'name', 'w', '<OBJ>', 'A', 'Klazz', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Klazz', '<ATTR>', 'name', 'y']
+['<MODEL>', '<OBJ>', 'E', 'Type', '<ATTR>', 'name', 'w', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Type', '<ATTR>', 'name', 'y']
+['<MODEL>', '<OBJ>', 'E', 'Type', '<ATTR>', 'name', 'w', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Type', '<ATTR>', 'name', 'y']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'E', 'DataType', '<ATTR>', 'name', 'w', '<OBJ>', 'A', 'Klazz', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Klazz', '<ATTR>', 'name', 'y']
+['<MODEL>', '<OBJ>', 'E', 'Type', '<ATTR>', 'name', 'w', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Type', '<ATTR>', 'name', 'y']
+['<MODEL>', '<OBJ>', 'E', 'Type', '<ATTR>', 'name', 'w', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Type', '<ATTR>', 'name', 'y']
+

@@ -1,0 +1,70 @@
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'tInt', 'DataType', '<ATTR>', 'name', 'Integer', '<OBJ>', 'A', 'Class', '<ATTR>', 'name', 'x']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'D', 'DataType', '<ATTR>', 'name', 'Integer', '<OBJ>', 'A', 'Class', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Attribute', '<ATTR>', 'name', 'y', 'multivalued', 'false', '<ASSOC>', 'att', 'A', 'y', '<ASSOC>', 'type', 'B', 'D']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'B', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'D', '<OBJ>', 'B', 'Column', '<ATTR>', 'name', 'y', '<ASSOC>', 'type', 'B', 'D', '<ASSOC>', 'col', 'A', 'B']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'B', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'D', '<OBJ>', 'B', 'Column', '<ATTR>', 'name', 'y', '<ASSOC>', 'type', 'B', 'D', '<ASSOC>', 'col', 'A', 'B']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'D', 'DataType', '<ATTR>', 'name', 'Integer', '<OBJ>', 'A', 'Class', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Attribute', '<ATTR>', 'name', 'y', 'multivalued', 'false', '<ASSOC>', 'att', 'A', 'y', '<ASSOC>', 'type', 'B', 'D']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'B', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'D', '<OBJ>', 'B', 'Column', '<ATTR>', 'name', 'y', '<ASSOC>', 'type', 'B', 'D', '<ASSOC>', 'col', 'A', 'B']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'B', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'D', '<OBJ>', 'B', 'Column', '<ATTR>', 'name', 'y', '<ASSOC>', 'type', 'B', 'D', '<ASSOC>', 'col', 'A', 'B']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'D', 'DataType', '<ATTR>', 'name', 'Integer', '<OBJ>', 'A', 'Class', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Attribute', '<ATTR>', 'name', 'y', 'multivalued', 'false', '<ASSOC>', 'att', 'A', 'y', '<ASSOC>', 'type', 'B', 'D']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'B', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'D', '<OBJ>', 'B', 'Column', '<ATTR>', 'name', 'y', '<ASSOC>', 'type', 'B', 'D', '<ASSOC>', 'col', 'A', 'B']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'B', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'D', '<OBJ>', 'B', 'Column', '<ATTR>', 'name', 'y', '<ASSOC>', 'type', 'B', 'D', '<ASSOC>', 'col', 'A', 'B']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'D', 'DataType', '<ATTR>', 'name', 'Integer', '<OBJ>', 'A', 'Class', '<ATTR>', 'name', 'x', '<OBJ>', 'B', 'Attribute', '<ATTR>', 'name', 'y', 'multivalued', 'false', '<ASSOC>', 'att', 'A', 'y', '<ASSOC>', 'type', 'B', 'D']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'B', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'D', '<OBJ>', 'B', 'Column', '<ATTR>', 'name', 'y', '<ASSOC>', 'type', 'B', 'D', '<ASSOC>', 'col', 'A', 'B']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'B', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'D', '<OBJ>', 'B', 'Column', '<ATTR>', 'name', 'y', '<ASSOC>', 'type', 'B', 'D', '<ASSOC>', 'col', 'A', 'B']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'A', 'DataType', '<ATTR>', 'name', 'x']
+['<MODEL>', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x']
+['<MODEL>', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'A', 'DataType', '<ATTR>', 'name', 'x']
+['<MODEL>', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x']
+['<MODEL>', '<OBJ>', 'A', 'Type', '<ATTR>', 'name', 'x']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'tInt', 'DataType', '<ATTR>', 'name', 'Integer', '<OBJ>', 'A', 'Class', '<ATTR>', 'name', 'x']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'tInt', 'DataType', '<ATTR>', 'name', 'Integer', '<OBJ>', 'A', 'Class', '<ATTR>', 'name', 'x']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'tInt', 'DataType', '<ATTR>', 'name', 'Integer', '<OBJ>', 'A', 'Class', '<ATTR>', 'name', 'x']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'tInt', 'DataType', '<ATTR>', 'name', 'Integer', '<OBJ>', 'A', 'Class', '<ATTR>', 'name', 'x']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+---
+--Current source / Current target / Current output--
+['<MODEL>', '<OBJ>', 'tInt', 'DataType', '<ATTR>', 'name', 'Integer', '<OBJ>', 'A', 'Class', '<ATTR>', 'name', 'x']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+['<MODEL>', '<OBJ>', 'A', 'Table', '<ATTR>', 'name', 'x', '<OBJ>', 'key', 'Column', '<ATTR>', 'name', 'objectId', '<ASSOC>', 'col', 'A', 'key', '<ASSOC>', 'key', 'A', 'key', '<ASSOC>', 'type', 'key', 'tInt']
+---
+  eval: loss 0.00
+  eval: accuracy of tokens 1.00
+  eval: accuracy of programs 1.00
+(20382, 20382, 200, 200)
+Training time: 3:52:58.315103 seconds
+
+
+#training: 1600
+valid: 200
+test: 200

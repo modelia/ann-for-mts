@@ -1,0 +1,24 @@
+  eval: loss 0.00
+  eval: accuracy of tokens 1.00
+  eval: accuracy of programs 1.00
+(9678, 9678, 100, 100)
+Training time: 2:18:47.099524 seconds
+
+
+# training set: 800
+# valid : 100
+# test: 100
+
+--------------------
+
+  eval: loss 35.39
+  eval: accuracy of tokens 0.86
+  eval: accuracy of programs 0.82
+(4251, 4962, 41, 50)
+Training time: 0:33:29.153376 seconds
+
+# training set: 200  
+# valid : 50
+# test: 50
+
+Note: The files in the folder are for this last case with the smallest dataset
