@@ -20,7 +20,7 @@ from torch.nn.utils import clip_grad_norm
 
 import data_utils
 import network
-import cPickle as pickle
+import _pickle as pickLe
 
 
 def create_model(source_vocab_size, target_vocab_size, source_vocab_list, target_vocab_list, dropout_rate,
@@ -229,9 +229,9 @@ def step_tree2tree(model, encoder_inputs, init_decoder_inputs, feed_previous=Fal
         encoder_inputs[idx].clear_states()
 
     if feed_previous:
-        return total_loss.data[0], output_predictions
+        return total_loss.item(), output_predictions
     else:
-        return total_loss.data[0]
+        return total_loss.item()
 
 
 def evaluate(model, test_set, source_vocab, target_vocab, source_vocab_list, target_vocab_list):
