@@ -273,7 +273,7 @@ class Seq2TreeModel(Seq2SeqModel):
           if feed_previous == False:
             child_idx = 0
             for idx in xrange(self.max_target_len - 1):
-              if prediction_nodes[num_node]['value'][idx + 1].data[0] == data_utils.NT_ID:
+              if prediction_nodes[num_node]['value'][idx + 1].item() == data_utils.NT_ID:
                 new_target = current_target['children'][child_idx]
                 new_node = self.build_prediction_node([], states[idx][0][self.num_layers - 1:,idx_node,:], new_target, new_target['value'], new_target['idx_batch'], new_target['depth'], num_node)
                 prediction_nodes.append(new_node)
@@ -283,9 +283,9 @@ class Seq2TreeModel(Seq2SeqModel):
           else:
             child_idx = 0
             for idx in xrange(self.max_target_len - 1):
-              if prediction_nodes[num_node]['prediction'][idx].data[0] == data_utils.EOS_ID:
+              if prediction_nodes[num_node]['prediction'][idx].item() == data_utils.EOS_ID:
                 break
-              if prediction_nodes[num_node]['prediction'][idx].data[0] == data_utils.NT_ID:
+              if prediction_nodes[num_node]['prediction'][idx].item() == data_utils.NT_ID:
                 if current_target == None or child_idx >= len(current_target['children']):
                   default_value = [data_utils.GO_ID, data_utils.EOS_ID] + [data_utils.PAD_ID] * (self.max_target_len - 2)
                   default_value = Variable(torch.LongTensor(default_value))
@@ -310,10 +310,10 @@ class Seq2TreeModel(Seq2SeqModel):
     current_words = node['prediction']
     current_children = node['children']
     for item in current_words[:]:
-      if item.data[0] == data_utils.EOS_ID:
+      if item.item() == data_utils.EOS_ID:
         break
-      elif item.data[0] != data_utils.NT_ID:
-        prediction.append(item.data[0])
+      elif item.item() != data_utils.NT_ID:
+        prediction.append(item.item())
       else:
         if child_idx >= len(current_children):
           prediction = prediction + [data_utils.LEFT_BRACKET_ID, data_utils.RIGHT_BRACKET_ID]
@@ -984,38 +984,38 @@ class Tree2TreeModel(nn.Module):
                 queue.append((current_prediction_manager_idx, nxt_r_prediction_idx))
           else:
             if current_prediction_idx == 0:
-              nxt_l_prediction_idx = prediction_managers[current_prediction_manager_idx].create_binary_tree(predictions_l[i].data[0], current_prediction_idx, current_prediction_tree.depth + 1)
+              nxt_l_prediction_idx = prediction_managers[current_prediction_manager_idx].create_binary_tree(predictions_l[i].item(), current_prediction_idx, current_prediction_tree.depth + 1)
               prediction_managers[current_prediction_manager_idx].trees[current_prediction_idx].lchild = nxt_l_prediction_idx
-              prediction_managers[current_prediction_manager_idx].trees[nxt_l_prediction_idx].prediction = predictions_l[i].data[0]
+              prediction_managers[current_prediction_manager_idx].trees[nxt_l_prediction_idx].prediction = predictions_l[i].item()
               prediction_managers[current_prediction_manager_idx].trees[nxt_l_prediction_idx].target = target_idx
               prediction_managers[current_prediction_manager_idx].trees[nxt_l_prediction_idx].state = states_l[0][:,i,:], states_l[1][:, i, :]
               prediction_managers[current_prediction_manager_idx].trees[nxt_l_prediction_idx].attention = attention_outputs_l[i]
               queue.append((current_prediction_manager_idx, nxt_l_prediction_idx))
             else:
-              if predictions_l[i].data[0] != data_utils.EOS_ID:
+              if predictions_l[i].item() != data_utils.EOS_ID:
                 if target_tree is None or target_tree.lchild is None:
-                  nxt_l_prediction_idx = prediction_managers[current_prediction_manager_idx].create_binary_tree(predictions_l[i].data[0], current_prediction_idx, current_prediction_tree.depth + 1)
+                  nxt_l_prediction_idx = prediction_managers[current_prediction_manager_idx].create_binary_tree(predictions_l[i].item(), current_prediction_idx, current_prediction_tree.depth + 1)
                   prediction_managers[current_prediction_manager_idx].trees[nxt_l_prediction_idx].target = None
                 else:
-                  nxt_l_prediction_idx = prediction_managers[current_prediction_manager_idx].create_binary_tree(predictions_l[i].data[0], current_prediction_idx, current_prediction_tree.depth + 1)
+                  nxt_l_prediction_idx = prediction_managers[current_prediction_manager_idx].create_binary_tree(predictions_l[i].item(), current_prediction_idx, current_prediction_tree.depth + 1)
                   prediction_managers[current_prediction_manager_idx].trees[nxt_l_prediction_idx].target = target_tree.lchild
                 prediction_managers[current_prediction_manager_idx].trees[current_prediction_idx].lchild = nxt_l_prediction_idx
-                prediction_managers[current_prediction_manager_idx].trees[nxt_l_prediction_idx].prediction = predictions_l[i].data[0]
+                prediction_managers[current_prediction_manager_idx].trees[nxt_l_prediction_idx].prediction = predictions_l[i].item()
                 prediction_managers[current_prediction_manager_idx].trees[nxt_l_prediction_idx].state = states_l[0][:,i,:], states_l[1][:, i, :]
                 prediction_managers[current_prediction_manager_idx].trees[nxt_l_prediction_idx].attention = attention_outputs_l[i]
                 queue.append((current_prediction_manager_idx, nxt_l_prediction_idx))
               if target_idx == 0:
                 continue
-              if predictions_r[i].data[0] == data_utils.EOS_ID:
+              if predictions_r[i].item() == data_utils.EOS_ID:
                 continue
               if target_tree is None or target_tree.rchild is None:
-                nxt_r_prediction_idx = prediction_managers[current_prediction_manager_idx].create_binary_tree(predictions_r[i].data[0], current_prediction_idx, current_prediction_tree.depth + 1)
+                nxt_r_prediction_idx = prediction_managers[current_prediction_manager_idx].create_binary_tree(predictions_r[i].item(), current_prediction_idx, current_prediction_tree.depth + 1)
                 prediction_managers[current_prediction_manager_idx].trees[nxt_r_prediction_idx].target = None
               else:
-                nxt_r_prediction_idx = prediction_managers[current_prediction_manager_idx].create_binary_tree(predictions_r[i].data[0], current_prediction_idx, current_prediction_tree.depth + 1)
+                nxt_r_prediction_idx = prediction_managers[current_prediction_manager_idx].create_binary_tree(predictions_r[i].item(), current_prediction_idx, current_prediction_tree.depth + 1)
                 prediction_managers[current_prediction_manager_idx].trees[nxt_r_prediction_idx].target = target_tree.rchild
               prediction_managers[current_prediction_manager_idx].trees[current_prediction_idx].rchild = nxt_r_prediction_idx
-              prediction_managers[current_prediction_manager_idx].trees[nxt_r_prediction_idx].prediction = predictions_r[i].data[0]
+              prediction_managers[current_prediction_manager_idx].trees[nxt_r_prediction_idx].prediction = predictions_r[i].item()
               prediction_managers[current_prediction_manager_idx].trees[nxt_r_prediction_idx].state = states_r[0][:,i,:], states_r[1][:, i, :]
               prediction_managers[current_prediction_manager_idx].trees[nxt_r_prediction_idx].attention = attention_outputs_r[i]
               queue.append((current_prediction_manager_idx, nxt_r_prediction_idx))
