@@ -20,7 +20,7 @@ from torch.nn.utils import clip_grad_norm
 
 import data_utils
 import network
-import cPickle as pickle
+import _pickle as pickLe
 
 
 def create_model(source_vocab_size, target_vocab_size, source_vocab_list, target_vocab_list, dropout_rate,
@@ -145,9 +145,9 @@ def step_seq2seq(model, encoder_inputs, decoder_inputs, source_serialize=True, f
         model.optimizer.step()
 
     if feed_previous:
-        return total_loss.data[0], output_predictions
+        return total_loss.item(), output_predictions
     else:
-        return total_loss.data[0]
+        return total_loss.item()
 
 
 def step_seq2tree(model, encoder_inputs, init_decoder_inputs, feed_previous=False):
@@ -189,9 +189,9 @@ def step_seq2tree(model, encoder_inputs, init_decoder_inputs, feed_previous=Fals
         model.optimizer.step()
 
     if feed_previous:
-        return total_loss.data[0], output_predictions
+        return total_loss.item(), output_predictions
     else:
-        return total_loss.data[0]
+        return total_loss.item()
 
 
 def step_tree2tree(model, encoder_inputs, init_decoder_inputs, feed_previous=False):
@@ -229,9 +229,9 @@ def step_tree2tree(model, encoder_inputs, init_decoder_inputs, feed_previous=Fal
         encoder_inputs[idx].clear_states()
 
     if feed_previous:
-        return total_loss.data[0], output_predictions
+        return total_loss.item(), output_predictions
     else:
-        return total_loss.data[0]
+        return total_loss.item()
 
 
 def evaluate(model, test_set, source_vocab, target_vocab, source_vocab_list, target_vocab_list):
@@ -318,7 +318,7 @@ def train(train_data, val_data, source_vocab, target_vocab, source_vocab_list, t
 
     train_model = True;
     build_from_scratch = True;
-    pretrained_model_path = "/home/lola/nn/neuralnetwork.pth";
+    pretrained_model_path = "neuralnetwork.pth";
     if (train_model):
 
         print ("Reading training and val data :")
@@ -404,7 +404,7 @@ def train(train_data, val_data, source_vocab, target_vocab, source_vocab_list, t
                     sys.stdout.flush()
         print("Training time: %s seconds" % (datetime.datetime.now() - start_datetime))
         print("Saving model")
-        torch.save(model, "/home/lola/nn/neuralnetwork.pth")
+        torch.save(model, "neuralnetwork.pth")
     else : # not train_model
         print("Loading the pretrained model")
         model = torch.load(pretrained_model_path)
